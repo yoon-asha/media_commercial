@@ -13,7 +13,7 @@ import dummy from "./api/MOCK_DATA.json"
 import styles from "../styles/embla.module.css"
 
 type PropType = {
-  slides: ReactNode[]
+  slides: ReactNode
   options: EmblaOptionsType
 }
 
