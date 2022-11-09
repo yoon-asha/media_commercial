@@ -18,12 +18,11 @@ const Input = () => {
     console.log(data)
     reset()
   }
-  const onInValid = (errors: Error) => console.log(errors)
 
   return (
     <>
       <form
-        onSubmit={handleSubmit(onValid, onInValid)}
+        onSubmit={handleSubmit(onValid)}
         method="post"
         style={{
           display: "grid",
