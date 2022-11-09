@@ -18,6 +18,7 @@ type PropType = {
 }
 
 export const EmblaCarousel = (props: PropType) => {
+  const QRlink = "https://media1208.netlify.app/input"
   // const EmblaCarousel = ({ slides, options = { loop: true } }) => {
   // const autoplayRoot = (emblaRoot) => emblaRoot.parentElement
   const { options, slides } = props // props로 가져온 옵션과 슬라이드 리스트
@@ -54,7 +55,7 @@ export const EmblaCarousel = (props: PropType) => {
                         padding: 20,
                       }}
                     >
-                      <QRCodeSVG value="localhost:3000/input" />
+                      <QRCodeSVG value={QRlink} />
                       <h3
                         style={{
                           color: "#fff",
